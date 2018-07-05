@@ -1,0 +1,42 @@
+{
+    "pages":[
+        "shop/index/index",
+        "order/list/list",
+        "category/list/list",
+        "address/list/list",
+        "food/list/list",
+        "member/index/index",
+        "food/add/add",
+        "category/add/add",
+        "shop/setting/setting",
+        "order/remark/remark",
+        "order/checkout/checkout",
+        "address/add/add",
+        "address/search/search",
+        "order/detail/detail"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#9F1A37",
+        "navigationBarTitleText": "好食",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar":{
+        "selectedColor": "#9F1A37",
+        "list":[{
+                "pagePath":"shop/index/index",
+                "iconPath":"images/icon_home.png",
+                "selectedIconPath":"images/icon_home_selected.png",
+                "text":"外卖"
+            },{
+                "pagePath":"order/list/list",
+                "iconPath":"images/icon_cate.png",
+                "selectedIconPath":"images/icon_cate_selected.png",
+                "text":"订单"
+            },{
+                "pagePath":"member/index/index",
+                "iconPath":"images/icon_member.png",
+                "selectedIconPath":"images/icon_member_selected.png",
+                "text":"我的"
+            }]
+    }
+}

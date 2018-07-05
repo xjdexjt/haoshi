@@ -1,0 +1,6 @@
+status,quantity,sn,amount,detail,total,express_fee,title
+1,1,,0.01,"[{""price"":0.01,""quantity"":1,""title"":""香酥鸭""}]",1.01,1,香酥鸭
+0,2,,12.01,"[{""price"":0.01,""quantity"":1,""title"":""香酥鸭""},{""price"":12,""quantity"":1,""title"":""时蔬""}]",13.01,1,香酥鸭
+1,2,,30,"[{""price"":12,""quantity"":1,""title"":""时蔬""},{""price"":18,""quantity"":1,""title"":""笋干""}]",31,1,时蔬
+0,1,,18,"[{""price"":18,""quantity"":1,""title"":""笋干""}]",19,1,笋干
+0,1,,12,"[{""price"":12,""quantity"":1,""title"":""脆炸鸡腿""}]",13,1,脆炸鸡腿

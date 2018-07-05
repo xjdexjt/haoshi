@@ -1,0 +1,40 @@
+<!-- list.wxml -->
+<!-- 空白占位 -->
+<view class="holder {{visual}}">
+	<image src="/images/holder.png" />
+	<view>您还没有订单，赶快去下单吧</view>
+</view>
+<!-- 订单列表 -->
+<view class="order-container">
+	<!-- 每个订单 -->
+	<view bindtap="showDetail" data-index="{{index}}" class="row" wx:for="{{orderList}}" wx:key="">
+		<!-- 商户信息 -->
+		<view class="shop">
+			<image src="{{item.user.userInfo.avatar}}" class="logo" />
+			<view class="summary">
+				<view class="title">{{item.address.detail}}</view>
+				<view class="status">
+					<block wx:if="{{item.status == 0}}">等待支付</block>
+					<block wx:elif="{{item.status == 1}}">待派送</block>
+					<block wx:elif="{{item.status == 2}}">派送中</block>
+          <block wx:elif="{{item.status == 3}}">已完成</block>
+					<block wx:elif="{{item.status == -1}}">已取消</block>
+				</view>
+			</view>
+		</view>
+		<!-- 商品信息 -->
+		<view class="goods">
+			<view class="title">{{item.title}} 等{{item.quantity}}件商品</view>
+			<view class="total">{{item.total}}</view>
+		</view>
+		<!-- 支付按钮 -->
+		<view class="payment">
+			<view class="button" data-index="{{index}}" catchtap="{{item.status == 0 && isAdmin == false ? 'showDetail' : 'showDetail'}}">
+				{{item.status == 0 && isAdmin == false ? '去支付' : '查看'}}
+			</view>
+		</view>
+	</view>
+</view>
+<view class="loading-indicator">
+	{{loadingTip}}
+</view>
