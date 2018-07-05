@@ -1,0 +1,155 @@
+/*会员中心*/
+
+/*个人信息*/
+.summary {
+	background: #9F1A37;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+/*头像*/
+.summary .avatar {
+	width: 80px;
+	height: 80px;
+	margin: 20px;
+	border-radius: 50%;
+}
+
+/*昵称*/
+.summary .nickname {
+	color: white;
+	font-size: 22px;
+}
+
+/*.个人信息*/
+
+/*账户信息*/
+.account {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 10px;
+	background: white;
+}
+
+/*每一项*/
+.account .item {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin-left: 0;
+	flex: 1;
+	border-right: 1px solid #eee;
+}
+
+.account .item:last-child {
+	border-right: 0;
+}
+
+/*数值*/
+.account .item .value {
+	font-size: 18px;
+	padding-top: 10px;
+}
+
+/*after通用样式*/
+.account .item .value:after {
+	font-size: 12px;
+	margin-left: 5px;
+}
+
+/*余额*/
+.account .item .balance {
+	color: #fd9900;
+}
+
+/*单位*/
+.account .item .balance:after {
+	content: '元';
+}
+
+/*优惠*/
+.account .item .coupon {
+	color: #ff5f3e;
+}
+
+/*单位*/
+.account .item .coupon:after {
+	content: '个';
+}
+
+/*积分*/
+.account .item .credit {
+	color: #6ac20b;
+}
+
+/*单位*/
+.account .item .credit:after {
+	content: '分';
+}
+
+/*标签*/
+.account .item .caption {
+	margin-top: -10px;
+	color: #666;
+	font-size: 14px;
+}
+/*.账户信息*/
+
+/*通用列表*/
+.listview {
+	margin-top: 10px;
+}
+
+/*列表项*/
+.listview .item {
+	background: white;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	position: relative;
+	margin-left: 0;
+	height: 50px;
+}
+
+/*箭头*/
+.listview .item:after {
+	content: " ";
+	height: 8px;
+	width: 8px;
+	border-width: 2px 2px 0 0;
+	border-color: #ccc;
+	border-style: solid;
+	transform:rotate(45deg);
+	position: absolute;
+	margin-top: -4px;
+	top: 50%;
+	right: 22px;
+}
+
+.listview .item .hd {
+	width: 25px;
+	height: 25px;
+	margin: 5px 0;
+	padding-left: 20px;
+}
+
+.listview .item .bd {
+	font-size: 16px;
+	margin-left: 10px;
+	flex: 1;
+}
+/*.通用列表*/
+
+/*退出登录*/
+.logout {
+	background: white;
+	padding: 2px 0;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #f23030;
+	text-align: center;
+	font-size: 18px;
+	line-height: 220%;
+}
