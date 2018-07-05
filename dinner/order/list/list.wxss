@@ -1,0 +1,110 @@
+/**
+ *
+ * 配套视频教程请移步微信->小程序->灵动云课堂
+ * 关注订阅号【huangxiujie85】，第一时间收到教程推送
+ *
+ * @link http://blog.it577.net
+ * @author 黄秀杰
+ */
+
+page {
+	font-size: 16px;
+	color: #333;
+}
+
+/*每一行数据*/
+.row {
+	background: white;
+	border-bottom: 15px;
+	padding: 0 15px;
+	margin-bottom: 10px;
+}
+
+/*商户信息*/
+.shop {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+/*logo*/
+.logo {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+/*名称与状态*/
+.summary {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-bottom: 1px solid #eee;
+	height: 44px;
+	align-items: center;
+	flex: 1;
+}
+
+/*名称*/
+.title {
+	margin-left: 10px;
+}
+
+/*状态*/
+.status {
+	font-size: 14px;
+	text-align: right;
+}
+
+/*商品信息*/
+.goods {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 14px;
+	height: 44px;
+	border-bottom: 1px solid #eee;
+}
+
+/*商品名称*/
+.goods .title {
+	padding-left: 44px;
+	color: #666;
+}
+
+/*商品小计*/
+.goods .total {
+	color: #000;
+	text-align: right;
+	font-weight: bold;
+}
+
+.goods .total:before {
+	content: '￥';
+}
+
+/*支付按钮*/
+.payment {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.payment .button {
+	margin: 14px 0;
+	border: solid 1px #f60;
+	border-radius: 3px;
+	padding: 7px 20px;
+	color: #f60;
+	font-size: 14px;
+}
+
+/*加载提示*/
+/*上拉加载提示*/
+.loading-indicator {
+	text-align: center;
+	font-size: 12px;
+	margin: 10px 0;
+	line-height: 300%;
+}

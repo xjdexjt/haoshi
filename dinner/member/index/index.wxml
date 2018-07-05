@@ -1,0 +1,52 @@
+<!-- 个人信息 -->
+<view class="summary">
+	<!-- <view class="avatar-container"> -->
+		<image src="{{user.userInfo.avatar ? user.userInfo.avatar : '/images/default-avatar.png'}}" class="avatar" />
+	<!-- </view> -->
+		<view class="nickname">{{user.userInfo.nickname}}</view>
+</view>
+<!-- 账户 -->
+<view class="account">
+	<view class="item">
+		<view class="value balance">0.00</view>
+		<view class="caption">余额</view>
+	</view>
+	<view class="item">
+		<view class="value coupon">0</view>
+		<view class="caption">优惠</view>
+	</view>
+	<view class="item">
+		<view class="value credit">0</view>
+		<view class="caption">积分</view>
+	</view>
+</view>
+<!-- 列表 -->
+<view class="listview">
+	<view class="item">
+		<image class="hd" src="/images/address.png" />
+		<navigator class="bd" url="../../address/list/list" open-type="navigate" hover-class="none">收货地址</navigator>
+		<view class="ft"></view>
+	</view>
+</view>
+<!-- 管理员 -->
+<view class="listview" wx:if="{{user.isAdmin}}">
+	<view class="item">
+		<image class="hd" src="/images/setting.png" />
+		<navigator class="bd" url="../../shop/setting/setting" open-type="navigate" hover-class="none">店铺设置</navigator>
+		<view class="ft"></view>
+	</view>
+	<view class="item">
+		<image class="hd" src="/images/category.png" />
+		<navigator class="bd" url="../../category/list/list" open-type="navigate" hover-class="none">分类管理</navigator>
+		<view class="ft"></view>
+	</view>
+	<view class="item">
+		<image class="hd" src="/images/food.png" />
+		<navigator class="bd" url="../../food/list/list" open-type="navigate" hover-class="none">菜品管理</navigator>
+		<view class="ft"></view>
+	</view>
+</view>
+<!-- 退出登录 -->
+<view class="logout" bindtap="logout">
+	退出登录
+</view>
