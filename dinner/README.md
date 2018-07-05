@@ -82,11 +82,3 @@ sn | String | 订单号
 isAdmin | Bool | true代表此用户为管理员
 userInfo | Object | 用户昵称头像等
 authData | Object | Bｍob维护的用户openid等信息
-
-![v1-done.gif](http://upload-images.jianshu.io/upload_images/2599324-548b6e719f225ee4.gif?imageMogr2/auto-orient/strip)
-
-**您如果觉得灵犀外卖有用，可以扫下面二维码赞助我，谢谢。**
-
-![cash.jpg](http://upload-images.jianshu.io/upload_images/2599324-fcb1188bc42629ff.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-![](http://upload-images.jianshu.io/upload_images/2599324-60b6db0a9b0ed867.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
