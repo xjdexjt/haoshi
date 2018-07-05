@@ -90,7 +90,7 @@
 
 .add-address .caption {
 	font-size: 14px;
-	color: #09f;
+	color: #E81548;
 	font-weight: bold;
 	margin-left: 5px;
 }

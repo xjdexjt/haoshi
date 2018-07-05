@@ -55,5 +55,5 @@
 			<textarea placeholder="选填，可以填写公告与简介" name="notice" value="{{seller.notice}}"></textarea>
 		</view>
 	</view>
-	<button form-type="submit" type="primary" class="update-button">提交</button>
+	<button form-type="submit" class="update-button">提交</button>
 </form>

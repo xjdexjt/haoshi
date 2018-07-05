@@ -1,11 +1,4 @@
-/**
- *
- * 配套视频教程请移步微信->小程序->灵动云课堂
- * 关注订阅号【huangxiujie85】，第一时间收到教程推送
- *
- * @link http://blog.it577.net
- * @author 黄秀杰
- */
+
 
 .category-container {
 	padding-bottom: 44px;
@@ -41,7 +34,7 @@
 
 .add-category .caption {
 	font-size: 14px;
-	color: #09f;
+	color: #E81548;
 	font-weight: bold;
 	margin-left: 5px;
 }

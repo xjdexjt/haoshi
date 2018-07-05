@@ -111,9 +111,9 @@
 .add-address .icon {
 	width: 16px;
 	height: 16px;
-	border: 1px solid #09f;
+	border: 1px solid #E81548;
 	border-radius: 50%;
-	color: #09f;
+	color: #E81548;
 	text-align: center;
 	font-size: 16px;
 	line-height: 16px;
@@ -122,7 +122,7 @@
 
 .add-address .caption {
 	font-size: 14px;
-	color: #09f;
+	color: #E81548;
 	font-weight: bold;
 	margin-left: 5px;
 }
